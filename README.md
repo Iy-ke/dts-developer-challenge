@@ -2,7 +2,7 @@
 
 This project is a submission for the DTS Developer Technical Test. It provides a simple, user-friendly system for HMCTS caseworkers to efficiently track and manage their tasks.
 
-## 🛠️ Technology Stack & Architecture
+##  Technology Stack & Architecture
 ![wireframe of front-end GUI](wireframe.png)
 To meet the technical requirements of building a full-stack application with a database, validation, and documentation, I chose the following stack:
 
@@ -11,7 +11,7 @@ To meet the technical requirements of building a full-stack application with a d
 * **Frontend:** **Vanilla JavaScript, HTML, and CSS**. I opted for a dependency-free frontend to keep the project lightweight and incredibly easy for reviewers to run. It interacts asynchronously with the backend via the native `fetch` API.
 * **Testing:** **Pytest**. Used to implement unit tests for the backend API endpoints.
 
-## ✨ Features
+##  Features
 
 * **Task Management:** Create, view, update (status), and delete tasks.
 * **Search & Retrieval:** Retrieve a specific task by its automatically generated ID, or view all tasks at once.
@@ -20,7 +20,7 @@ To meet the technical requirements of building a full-stack application with a d
 
 ---
 
-## 🚀 How to Run the Application
+##  How to Run the Application
 
 ### 1. Set up the Backend
 Ensure you have Python 3 installed. Open your terminal in the backend directory and run:
@@ -31,17 +31,18 @@ pip install -r requirements.txt
 
 # Start the FastAPI server (using -m to avoid Windows PATH issues)
 python -m uvicorn main:app --reload
+```
 
 The backend will now be running at http://127.0.0.1:8000.
 
-2. View API Documentation
+### 2. View API Documentation
 With the server running, navigate to http://127.0.0.1:8000/docs in your web browser. Here you will find the auto-generated Swagger UI detailing all API endpoints, schemas, and error responses. You can even test the API directly from this page.
 
-3. Launch the Frontend
+### 3. Launch the Frontend
 Because the frontend is built with Vanilla JavaScript, there is no build process required.
 Simply open the index.html file in any modern web browser. The UI will automatically connect to the local Python backend.
 
-🧪 Running Unit Tests
+### Running Unit Tests
 Unit tests have been implemented using Pytest. To run the test suite, ensure your virtual environment is active (if using one) and execute:
 
 Bash
